@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCréa-africa - Création de Sites Web, Logos & Supports Print</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #e0e2bb;
+        }
+
+        /* Header */
+        header {
+            
+            
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: rgb(223, 245, 100);
+            padding: 80px 0;
+            text-align: center;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+}
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .service-content {
+            padding: 25px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .service-features {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .service-features li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .service-features li:before {
+            content: "✓";
+            color: #25D366;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .author-info p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        .stars {
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: white;
+            text-align: center;
+        }
+
+        .whatsapp-contact {
+            background: #25D366;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .whatsapp-number {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .about-content { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>WebCréa-africa</h1>
+            <p class="tagline">Votre partenaire en création digitale & print</p>
+            <a href="https://wa.me/22891276104" class="cta-button" target="_blank">
+                📞 Discutons de votre projet
+            </a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">nos Services</h2>
+            <div class="services-grid">
+                <!-- Service 1 - Site Web -->
+                <div class="service-card">
+                    <img src="Capture d’écran 2025-10-19 122201.png" 
+                         alt="Création de sites web professionnels" class="service-image">
+                    <div class="service-content">
+                        <h3>🌐 Sites Web</h3>
+                        <p>Création de sites web modernes, responsives et optimisés pour convertir vos visiteurs en clients.</p>
+                        <ul class="service-features">
+                            <li>Design responsive (mobile + desktop)</li>
+                            <li>Optimisation SEO</li>
+                            <li>Intégration rapide</li>
+                            <li>Formation incluse</li>
+                            <li>Hébergement conseillé</li>
+                        </ul>
+                        <a href="https://wa.me/22891276104?text=Bonjour! Je suis intéressé(e) par la création d'un site web" 
+                           class="cta-button" target="_blank" style="padding: 10px 20px; font-size: 0.9rem;">
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 - Carte de Visite (IMAGE PERSONNALISÉE) -->
+                <div class="service-card">
+                    <img src="carte de visite.png" 
+                         alt="Exemple de carte de visite professionnelle" class="service-image">
+                    <div class="service-content">
+                        <h3>📇 Cartes de Visite</h3>
+                        <p>Designs élégants et professionnels qui laissent une impression durable.</p>
+                        <ul class="service-features">
+                            <li>Design unique et personnalisé</li>
+                            <li>Choix des papiers premium</li>
+                            <li>Finitions soignées</li>
+                            <li>Fichiers print-ready</li>
+                            <li>Conseils d'impression</li>
+                        </ul>
+                        <a href="https://wa.me/22891276104?text=Bonjour! Je suis intéressé(e) par des cartes de visite" 
+                           class="cta-button" target="_blank" style="padding: 10px 20px; font-size: 0.9rem;">
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 - Brochure -->
+                <div class="service-card">
+                    <img src="brochure.png" 
+                         alt="Création de brochures professionnelles" class="service-image">
+                    <div class="service-content">
+                        <h3>📖 Brochures</h3>
+                        <p>Brochures percutantes qui présentent efficacement vos services et expertise.</p>
+                        <ul class="service-features">
+                            <li>Mise en page professionnelle</li>
+                            <li>Graphisme attractif</li>
+                            <li>Adapté à votre cible</li>
+                            <li>Version digitale et print</li>
+                            <li>Conseils marketing inclus</li>
+                        </ul>
+                        <a href="https://wa.me/22891276104?text=Bonjour! Je suis intéressé(e) par une brochure" 
+                           class="cta-button" target="_blank" style="padding: 10px 20px; font-size: 0.9rem;">
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 - Logo -->
+                <div class="service-card">
+                    <img src="Capture d’écran 2025-10-19 121203.png" 
+                         alt="Création de logos uniques" class="service-image">
+                    <div class="service-content">
+                        <h3>⚡ Logos</h3>
+                        <p>Création d'identités visuelles uniques qui représentent parfaitement votre marque.</p>
+                        <ul class="service-features">
+                            <li>Plusieurs propositions</li>
+                            <li>Chartes graphiques complètes</li>
+                            <li>Logo adaptatif</li>
+                            <li>Fichiers vectoriels</li>
+                            <li>Guide d'utilisation</li>
+                        </ul>
+                        <a href="https://wa.me/22891276104?text=Bonjour! Je suis intéressé(e) par un logo" 
+                           class="cta-button" target="_blank" style="padding: 10px 20px; font-size: 0.9rem;">
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Ce Que Disent Mes Clients</h2>
+            <div class="testimonials-grid">
+                <!-- Témoignage 1 -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Excellent travail ! Mon site web est magnifique et fonctionne parfaitement sur mobile. Professionnel et à l'écoute, je recommande vivement !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SD</div>
+                        <div class="author-info">
+                            <h4>Sarah D.</h4>
+                            <p>Gérante de boutique</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 2 -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Mes cartes de visite ont fait sensation ! Design moderne et professionnel. Mes clients les remarquent tout de suite. Merci !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div class="author-info">
+                            <h4>Marc K.</h4>
+                            <p>Consultant indépendant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 3 -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Logo et brochure parfaits ! Il a su comprendre mon univers et le retranscrire en images. Un vrai partenariat de qualité."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LA</div>
+                        <div class="author-info">
+                            <h4>Lucie A.</h4>
+                            <p>Artiste peintre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 4 -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Rapide, professionnel et très créatif. La brochure a vraiment boosté nos ventes. Service après-vente impeccable !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PT</div>
+                        <div class="author-info">
+                            <h4>Pierre T.</h4>
+                            <p>Directeur commercial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 5 -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Un site web exactement comme je l'imaginais ! Le processus était simple et le résultat dépasse mes attentes. Merci !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">NJ</div>
+                        <div class="author-info">
+                            <h4>Nadia J.</h4>
+                            <p>Coach sportive</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 6 -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Identité visuelle complète créée avec talent. Mon entreprise a gagné en crédibilité grâce à son travail professionnel."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DR</div>
+                        <div class="author-info">
+                            <h4>David R.</h4>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">À Propos</h2>
+            <div class="about-content">
+                <div>
+                    <h3>Votre partenaire de confiance</h3>
+                    <p>Je suis spécialisé dans la création d'identités visuelles complètes pour les entrepreneurs et petites entreprises. Mon objectif : donner vie à votre vision à travers des designs professionnels et efficaces.</p>
+                </div>
+                <div>
+                    <h3>Pourquoi me choisir ?</h3>
+                    <ul style="list-style-position: inside;">
+                        <li>Designs sur-mesure et uniques</li>
+                        <li>Respect des délais</li>
+                        <li>Support personnalisé</li>
+                        <li>Résultats professionnels</li>
+                        <li>Prix compétitifs</li>
+                        <li>Satisfaction garantie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Travaillons Ensemble</h2>
+            <div class="whatsapp-contact">
+                <h3>Contactez-moi directement sur WhatsApp</h3>
+                <p class="whatsapp-number">+228 91 27 61 04</p>
+                <p style="margin-bottom: 20px; opacity: 0.9;">Réponse rapide garantie !</p>
+                <a href="https://wa.me/22891276104" class="cta-button" target="_blank" style="background: white; color: #25D366;">
+                    💬 Envoyer un message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WebCréa-africa  Tous droits réservés</p>
+            <p>Spécialiste en création de sites web, logos, cartes de visite et brochures</p>
+            <p style="margin-top: 10px; opacity: 0.8;">a votre service</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+
+    <a href="https://wa.me/22891276104" class="whatsapp-float" target="_blank">
+        💬
+    </a>
+</body>
+</html>
